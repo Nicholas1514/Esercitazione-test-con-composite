@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RispostaSingola.cs" />
+    <Compile Include="VeroFalso.cs" />
+    <Compile Include="RispostaMultipla.cs" />
+    <Compile Include="IComposite.cs" />
+    <Compile Include="Risposte.cs" />
+    <Compile Include="Domande.cs" />
+    <Compile Include="Test.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
