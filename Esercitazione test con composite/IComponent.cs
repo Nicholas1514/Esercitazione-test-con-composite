@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Esercitazione_test_con_composite
 {
-	internal class Class1
+	internal interface Interface1
 	{
 	}
 }

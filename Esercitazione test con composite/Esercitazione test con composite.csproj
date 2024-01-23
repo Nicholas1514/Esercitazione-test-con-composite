@@ -50,7 +50,6 @@
     <Compile Include="VeroFalso.cs" />
     <Compile Include="RispostaMultipla.cs" />
     <Compile Include="IComposite.cs" />
-    <Compile Include="Risposte.cs" />
     <Compile Include="Domande.cs" />
     <Compile Include="Test.cs" />
     <Compile Include="Form1.cs">
