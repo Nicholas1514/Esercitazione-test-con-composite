@@ -48,5 +48,14 @@ namespace Esercitazione_test_con_composite
 		{
 			return $"Risposta multipla: {Testomultipla}";
 		}
+		public override bool Equals(object obj)
+		{
+			if (!(obj is RispostaMultipla) || obj == null)
+				return false;
+
+			RispostaMultipla other = (RispostaMultipla)obj;
+
+			return Testomultipla == other.Testomultipla;
+		}
 	}
 }

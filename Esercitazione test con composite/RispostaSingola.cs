@@ -46,6 +46,14 @@ namespace Esercitazione_test_con_composite
 		{
 			return $"Risposta singola: {Testosingola}";
 		}
+		public override bool Equals(object obj)
+		{
+			if (!(obj is RispostaSingola) || obj == null)
+				return false;
 
+			RispostaSingola other = (RispostaSingola)obj;
+
+			return Testosingola == other.Testosingola;
+		}
 	}
 }
