@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Esercitazione_test_con_composite
 {
-	public class RispostaMultipla
+	public class RispostaMultipla : Domande
 	{
 		string _testomultipla;
 		public string Testomultipla
@@ -28,7 +28,22 @@ namespace Esercitazione_test_con_composite
 		{
 			Testomultipla = vrispostamultipla.Testomultipla;
 		}
+		public void Aggiungi()
+		{
 
+		}
+		public void Rimuovi()
+		{
+
+		}
+		public IComponent GetChild(int indice)
+		{
+			return null;
+		}
+		public double Punteggio()
+		{
+			return 10;
+		}
 		public override string ToString()
 		{
 			return $"Risposta multipla: {Testomultipla}";

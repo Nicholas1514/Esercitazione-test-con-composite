@@ -63,7 +63,7 @@ namespace Esercitazione_test_con_composite
 
 		public double Punteggio()
 		{
-			return 0;
+			return 10;
 		}
 	}
 }
