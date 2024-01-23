@@ -8,5 +8,6 @@ namespace Esercitazione_test_con_composite
 {
 	public class RispostaMultipla
 	{
+		
 	}
 }
