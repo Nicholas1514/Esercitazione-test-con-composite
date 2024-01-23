@@ -8,26 +8,26 @@ namespace Esercitazione_test_con_composite
 {
 	public class RispostaSingola : Domande
 	{
-		string _testo;
-		public string Testo
+		string _testosingola;
+		public string Testosingola
 		{
-			get { return _testo; }
-			set { _testo = value; }
+			get { return _testosingola; }
+			set { _testosingola = value; }
 		}
 
 		public RispostaSingola()
 		{
-			Testo = string.Empty;
+			Testosingola = string.Empty;
 		}
 
 		public RispostaSingola(string testo)
 		{
-			Testo = testo;
+			Testosingola = testo;
 		}
 
 		public RispostaSingola(RispostaSingola vrispostasingola)
 		{
-			Testo = vrispostasingola.Testo;
+			Testosingola = vrispostasingola.Testosingola;
 		}
 
 		public void Aggiunta()
@@ -38,13 +38,13 @@ namespace Esercitazione_test_con_composite
 		{
 			return 0;
 		}
-		public IComponent GetChile(int indice)
+		public IComponent GetChild(int indice)
 		{
 			return null;
 		}
 		public override string ToString()
 		{
-			return $"Risposta singola: {Testo}";
+			return $"Risposta singola: {Testosingola}";
 		}
 
 	}

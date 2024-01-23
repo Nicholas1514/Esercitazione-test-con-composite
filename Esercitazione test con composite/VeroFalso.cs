@@ -8,27 +8,27 @@ namespace Esercitazione_test_con_composite
 {
 	public class VeroFalso : Domande
 	{
-		private string _testo;
+		private string _testovf;
 
-		public string Testo
+		public string Testovf
 		{
-			get { return _testo; }
-			set { _testo = value; }
+			get { return _testovf; }
+			set { _testovf = value; }
 		}
 
 		public VeroFalso()
 		{
-			Testo = "";
+			Testovf = "";
 		}
 
 		public VeroFalso(string testo)
 		{
-			Testo = testo;
+			Testovf = testo;
 		}
 
 		public VeroFalso(VeroFalso vDomanda)
 		{
-			Testo = vDomanda.Testo;
+			Testovf = vDomanda.Testovf;
 		}
 
 		public override bool Equals(object obj)
@@ -38,7 +38,7 @@ namespace Esercitazione_test_con_composite
 
 			VeroFalso other = (VeroFalso)obj;
 
-			return Testo == other.Testo;
+			return Testovf == other.Testovf;
 		}
 
 		public void Aggiunta(IComponent comp)
@@ -58,7 +58,7 @@ namespace Esercitazione_test_con_composite
 
 		public override string ToString()
 		{
-			return $"Testo domanda vero/falso: {Testo};";
+			return $"Testo domanda vero/falso: {Testovf};";
 		}
 
 		public double Punteggio()
